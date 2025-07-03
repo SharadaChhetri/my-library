@@ -1,12 +1,9 @@
 {
-  "name": "@SharadaChhetri/my-library"
+  "name": "@SharadaChhetri/my-library",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/SharadaChhetri/my-library.git"
-  },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   }
 }
+
