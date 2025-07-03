@@ -19,10 +19,11 @@ jobs:
           node-version: '18'
           registry-url: 'https://npm.pkg.github.com/'
 
-      - name: Authenticate
+      - name: Authenticate with GitHub Packages
         run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" > ~/.npmrc
 
-      - name: Install and publish
-        run: |
-          npm install
-          npm publish
+      - name: Install dependencies
+        run: npm install
+
+      - name: Publish to GitHub Packages
+        run: npm publish
